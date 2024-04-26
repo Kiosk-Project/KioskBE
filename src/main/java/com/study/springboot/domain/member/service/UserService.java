@@ -5,18 +5,31 @@ import com.study.springboot.datas.KioskSession;
 import com.study.springboot.domain.member.User;
 import com.study.springboot.domain.member.dto.RequestAddUserDto;
 import com.study.springboot.domain.member.dto.RequestEditUserDto;
+import com.study.springboot.domain.member.dto.UserDto;
 import com.study.springboot.domain.member.repository.UserRepository;
 import lombok.RequiredArgsConstructor;
+import org.springframework.data.domain.Sort;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Optional;
+import java.util.stream.Collectors;
 
 @Service
 @RequiredArgsConstructor
 public class UserService {
 
     private final UserRepository userRepository;
+
+    @Transactional
+    public List<UserDto> findAll(){
+
+        //TODO: 정렬기능
+        List<User> users = userRepository.findAll();
+        return users.stream().map(UserDto::new).collect(Collectors.toList());
+    }
 
 
     @Transactional

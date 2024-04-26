@@ -1,5 +1,6 @@
 package com.study.springboot.datas;
 
+import com.study.springboot.enumeration.Place;
 import com.study.springboot.enumeration.UserRole;
 import lombok.Builder;
 import lombok.Getter;
@@ -11,6 +12,7 @@ public class KioskSession {
     private Boolean isLogin = false;
     private String userId;
     private UserRole userRole;
+    private Place userPlace;
 
 
     @Builder
@@ -36,5 +38,9 @@ public class KioskSession {
                 .userId(userId)
                 .userRole(UserRole.USER)
                 .build();
+    }
+
+    public void setPlace(Place place){
+        this.userPlace = place;
     }
 }

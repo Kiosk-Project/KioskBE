@@ -44,7 +44,7 @@ public class User {
 
     @Enumerated(EnumType.STRING)
     @Column
-    private UserRole userRole = UserRole.USER;
+    private UserRole userRole;
 
     @OneToMany(mappedBy = "user")
     private List<OrderList> orderList = new ArrayList<>();
@@ -99,6 +99,20 @@ public class User {
 
 
     public User addUserPoint(Integer point){
+        Integer updatedPoint = this.userPoint + point;
+        return User.builder()
+                .id(this.id)
+                .userId(userId)
+                .userName(userName)
+                .userPw(userPw)
+                .userJoinDate(this.userJoinDate)
+                .userRole(this.userRole)
+                .orderList(this.orderList)
+                .userPoint(updatedPoint)
+                .build();
+    }
+
+    public User useUserPoint(Integer point){
         Integer updatedPoint = this.userPoint + point;
         return User.builder()
                 .id(this.id)

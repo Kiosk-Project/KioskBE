@@ -5,14 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7fdf05d9-d4fc-4652-899a-4c181ffb5ba2" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/study/springboot/datas/KioskSession.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/study/springboot/domain/member/dto/RequestAddUserDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/study/springboot/domain/member/AdminController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/study/springboot/enumeration/Place.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/study/springboot/datas/Message.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/study/springboot/datas/Message.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/study/springboot/datas/KioskSession.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/study/springboot/datas/KioskSession.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/study/springboot/domain/member/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/study/springboot/domain/member/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/study/springboot/domain/member/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/study/springboot/domain/member/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/study/springboot/domain/member/dto/RequestUserDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/study/springboot/domain/member/dto/RequestEditUserDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/study/springboot/domain/member/dto/UserDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/study/springboot/domain/member/dto/UserDto.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/study/springboot/domain/member/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/study/springboot/domain/member/service/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -69,8 +70,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Enum" />
         <option value="Interface" />
+        <option value="Enum" />
         <option value="Class" />
       </list>
     </option>

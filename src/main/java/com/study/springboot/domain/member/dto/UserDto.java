@@ -35,12 +35,11 @@ public class UserDto {
 
     private List<OrderList> orderList;
 
-    UserDto(User entity){
+    public UserDto(User entity){
         this.id = entity.getId();
         this.userId = entity.getUserId();
         this.userPw = entity.getUserPw();
         this.userName = entity.getUserName();
-        this.userRole = entity.getUserRole();
         this.userPoint = entity.getUserPoint();
         this.userJoinDate = entity.getUserJoinDate();
         this.orderList = entity.getOrderList();
