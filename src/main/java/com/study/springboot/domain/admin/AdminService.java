@@ -58,7 +58,7 @@ public class AdminService {
 
         Page<UserDto> userDtoPage = null;
         if(type == null){
-            userDtoPage = userRepository.findAll(pageRequest).map(UserDto::new);
+            userDtoPage = userRepository.findUsersByUserDelYn(false, pageRequest).map(UserDto::new);
         } else if(type.equals("id")){
             userDtoPage = userRepository.findByUserIdContains(text, pageRequest).map(UserDto::new);
         } else if(type.equals("name")){
@@ -122,7 +122,7 @@ public class AdminService {
         PageRequest pageRequest = PageRequest.of(page, 5, Sort.by(orderBy).ascending());
         System.out.println("orderBy" + orderBy);
 
-        Page<ProductDto> productDtoPage =  productRepository.findAll(pageRequest).map(ProductDto::new);
+        Page<ProductDto> productDtoPage =  productRepository.findProductByProductDelYn(false, pageRequest).map(ProductDto::new);
         return productDtoPage;
     }
 
@@ -203,13 +203,13 @@ public class AdminService {
 
     //주문 목록 조회
     @Transactional
-    public OrderListResponseDto getOrderList(String type, String text, int page){
+    public Page<OrderListDto> getOrderList(String type, String text, int page){
         PageRequest pageRequest = PageRequest.of(page, 5, Sort.by("orderListTime").descending());
         int total = 0;
 
         Page<OrderListDto> orderListDtoPage=null;
         if(type==null){
-            orderListDtoPage = orderListRepository.findAll(pageRequest).map(OrderListDto::new);
+            orderListDtoPage = orderListRepository.findOrderListByOrderListDelYn(false, pageRequest).map(OrderListDto::new);
             total = orderListRepository.findAll().size();
         } else if(type.equals("status")){
             OrderListStatus status = OrderListStatus.valueOf(text.toUpperCase());
@@ -217,12 +217,7 @@ public class AdminService {
             total = orderListRepository.findByOrderListStatus(status).size();
         }
 
-        OrderListResponseDto orderListResponseDto = OrderListResponseDto.builder()
-                .totalCount(total)
-                .orderList(orderListDtoPage)
-                .build();
-
-        return orderListResponseDto;
+        return orderListDtoPage;
     }
 
     //주문 상세 조회

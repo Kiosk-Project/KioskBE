@@ -1,4 +1,4 @@
-# 🌟 Digital Hana 路 3기: 8조 백엔드 실습 게시판 프로젝트 🌟
+# 🌟 Digital Hana 路 3기: 8조 게시판 프로젝트 🌟
 
 ## 📍 Overview
 
@@ -9,6 +9,8 @@
 주문 금액의 1%은 적립됩니다.
 
 관리자 페이지가 별도로 존재합니다.
+
+<a href="https://github.com/Kiosk-Project/KioskFE"><strong>📬 프론트 레포지토리로 가기! (클릭)</strong></a>
 
 ## 🚀 Member (2024.04.26 ~ 2024.05.09)
 
@@ -31,12 +33,12 @@
     <img src="https://img.shields.io/badge/JPA-005F0F?style=for-the-badge&logo=jpa&logoColor=white">
 </p>
 
-#### [Front-End]
+#### [Front-end]
 
 <p>
     <img src="https://img.shields.io/badge/vite-%23646CFF.svg?style=for-the-badge&logo=vite&logoColor=white"/>
     <img src="https://img.shields.io/badge/Typescript-3178C6?style=for-the-badge&logo=Typescript&logoColor=white"/>
-    <img src="https://img.shields.io/badge/react%2018.2.66-61DAFB?style=for-the-badge&logo=react&logoColor=black">
+    <img src="https://img.shields.io/badge/react%2018.2.66-61B6D4?style=for-the-badge&logo=react&logoColor=white">
     <img src="https://img.shields.io/badge/Tailwind CSS-06B6D4?style=for-the-badge&logo=Tailwind CSS&logoColor=white"/>
     <img src="https://img.shields.io/badge/html5-E34F26?style=for-the-badge&logo=html5&logoColor=white"> 
     <img src="https://img.shields.io/badge/css-1572B6?style=for-the-badge&logo=css3&logoColor=white">
@@ -46,6 +48,7 @@
 
 <p>
   <img src="https://img.shields.io/badge/IntelliJ%20IDEA-CB5B8D?style=for-the-badge&logo=intellijidea&logoColor=white"/>
+  <img src="https://img.shields.io/badge/Visual_Studio_Code-0078D4?style=for-the-badge&logo=visual%20studio%20code&logoColor=white"/>
   <img src="https://img.shields.io/badge/DBeaver-4D4D4D?style=for-the-badge&logo=dbeaver&logoColor=white">
   <img src="https://img.shields.io/badge/Postman-FF6C37?style=for-the-badge&logo=Postman&logoColor=white"/>
   <img src="https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white"/>
@@ -62,13 +65,7 @@
 
 ### ✅ 시연 영상
 
-### [상품주문 페이지]
-
-![시연-메인-전체](https://github.com/Kiosk-Project/KioskBE/assets/140530127/055e36b2-f821-47dd-85e7-773d572e2dee)
-
-### [관리자 페이지]
-
-![시연-관리자-전체](https://github.com/Kiosk-Project/KioskBE/assets/140530127/96f7d361-cc6c-4f76-a232-da0cef9495d0)
+<img src="https://github.com/Kiosk-Project/KioskBE/assets/140530127/055e36b2-f821-47dd-85e7-773d572e2dee" width="400" height="500"/>
 
 <details>
 <summary><strong>[세부 영상]</strong></summary>
@@ -76,11 +73,9 @@
 
 ### [상품주문 페이지]
 
-|                                                  회원가입                                                   |                                                   로그인                                                    |
+|                                                   로그인                                                    |                                                  상품 주문                                                  |
 | :---------------------------------------------------------------------------------------------------------: | :---------------------------------------------------------------------------------------------------------: |
-| ![회원가입](https://github.com/Kiosk-Project/KioskBE/assets/140530127/f5b3172e-285b-4440-8cfc-4f5c3973b9c2) |  ![로그인](https://github.com/Kiosk-Project/KioskBE/assets/140530127/36daa871-23d1-4164-97fe-86deef074556)  |
-|                                                **메뉴 선택**                                                |                                                **주문 상세**                                                |
-| ![메뉴선택](https://github.com/Kiosk-Project/KioskBE/assets/140530127/783669f9-a45a-475f-8125-6db4183b2006) | ![주문상세](https://github.com/Kiosk-Project/KioskBE/assets/140530127/95b987f7-32e9-48c6-8975-f25f32809ad0) |
+|  ![로그인](https://github.com/Kiosk-Project/KioskBE/assets/140530127/36daa871-23d1-4164-97fe-86deef074556)  | ![주문상세](https://github.com/Kiosk-Project/KioskBE/assets/140530127/95b987f7-32e9-48c6-8975-f25f32809ad0) |
 |                                                **메뉴 추천**                                                |                                                **결제 성공**                                                |
 | ![메뉴추천](https://github.com/Kiosk-Project/KioskBE/assets/140530127/827e5526-0328-45fc-aeff-cc26bbcde5a4) | ![결제성공](https://github.com/Kiosk-Project/KioskBE/assets/140530127/c1858104-4a56-4557-bb2f-f62a6b05f85b) |
 

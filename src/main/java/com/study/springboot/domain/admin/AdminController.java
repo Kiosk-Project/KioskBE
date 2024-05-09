@@ -116,7 +116,7 @@ public class AdminController {
                                                         @RequestParam(value="text", required = false) @Nullable String text,
                                                         @RequestParam(value="page", required = false, defaultValue = "0") @Nullable int page
     ){
-        OrderListResponseDto dto = adminService.getOrderList(type, text, page);
+        Page<OrderListDto> dto = adminService.getOrderList(type, text, page);
         if(dto == null){
             Message message = messageService.orderListNotFoundMessage();
             return ResponseEntity.ok(message);
